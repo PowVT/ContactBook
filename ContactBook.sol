@@ -45,9 +45,10 @@ contract ContactBook {
     /**
   * @dev function used to view entire contact book,  if you don't know specific ID number.
   */
-  function viewContactBook() public view returns(struct){
-      for (uint i = 0; i<=numContact; i++) 
-        return (getInfo(i));
+  function viewContactBook() public view {
+      for (uint i = 0; i <= numContact; i++) {
+          getInfo(i);
+      }
   }
     
 }
